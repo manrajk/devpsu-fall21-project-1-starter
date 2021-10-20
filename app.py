@@ -30,7 +30,10 @@ def read_users():
 
 # Add a route to a return a json response like an API
 #####################################################
-
+@app.route('/api')
+def apiRequest():
+    superSecretData = {'to do':[{'event':'math homework','status':'started'},{'event':'project 1','status':'almost done!'}], 'message':'got the to do list!', 'status':'success'}
+    return jsonify(superSecretData)
 
 
 # If this file is executed, run the app
