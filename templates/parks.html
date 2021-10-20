@@ -5,7 +5,9 @@
     </head>
     <body>
         
-        <p>Replace this with the park page logic.</p>
+        {% for dct in parks %}
+        <p> {{dct.name}} Nation Park is located in {{dct.loc}}. {{dct.desc}} </p>
+        {% endfor %}
         
     </body>
 </html>

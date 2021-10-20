@@ -5,7 +5,11 @@
     </head>
     <body>
         
-        <p>Replace this with the hello page logic.</p>
+        {% if name %}
+        <p>Hello {{ name }}!</p>
+        {% else %}
+        <p>Hello random no named person!</p>
+        {% endif %}
 
     </body>
 </html>
